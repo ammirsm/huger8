@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>همایش دستاورد های علمی پژوهشی هوگر</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="author" content="Amir Hossein Saeid Mehr">
+		<meta name="author" content="امیرحسین سعیدمهر">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="flat-ui/images/favicon.ico">
+		<link rel="stylesheet" href="flat-ui/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="flat-ui/bootstrap/css/bootstrap-responsive.css">
+		<link rel="stylesheet" href="flat-ui/css/flat-ui.css">
+		<!-- Using only with Flat-UI (free)-->
+		<link rel="stylesheet" href="common-files/css/icon-font.css">
+		<!-- end -->
+		<script src="flat-ui/js/jquery-1.8.3.min.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="../../flat-ui/js/html5shiv.js"></script>
+		<![endif]-->
+		<script>
+			/*$('#myAffix').affix({
+			 offset : {
+			 top : 100,
+			 bottom : function() {
+			 return (this.bottom = $('.bs-footer').outerHeight(true))
+			 }
+			 }
+			 })*/
+			init();
+			jQuery(window).resize(function() {
+				init();
+			});
+			var myHeight;
+			function init() {
+				// Get height and width.
+				myHeight = $(window).height();
+				myWidth = $(window).width();
+
+				// Set height on the page.
+				$(".content-23").css("height", myHeight + "px");
+
+			}
+		</script>
+		<style>
+			@font-face {
+				font-family: 'BYagut';
+				src: url('fonts/BYagut.eot?#') format('eot'), /* IE6–8 */
+				url('fonts/BYagut.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+				url('fonts/BYagut.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: 'BRoya';
+				src: url('fonts/BRoya.eot?#') format('eot'), /* IE6–8 */
+				url('fonts/BRoya.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+				url('fonts/BRoya.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			.startupheader {
+				width: 763px;
+				height: 294px;
+				margin-top: -148px;
+				margin-left: -381px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				background-image: url("img/header.png");
+			}
+			.icon-startup {
+				width: 30px !important;
+				height: 30px !important;
+				margin-left: -15px !important;
+				font-size: 23px !important;
+				line-height: 35px !important;
+				color: #686464 !important;
+				background: #FFFFFF !important;
+				bottom: 70px !important;
+			}
+			.content-23 .control-btn {
+				opacity: 0.7;
+			}
+			.date {
+				direction: rtl;
+				font-family: 'BRoya', sans-serif;
+				color: #FFF;
+				font-size: 29px;
+			}
+			.startupdate {
+				position: absolute;
+				margin-left: -72px;
+				bottom: 25px;
+				left: 50%;
+			}
+			.content-23.custom-bg {
+				background-image: url('img/background.png');
+			}
+			svg.bigTriangle.white-to-gray {
+				background-color: #f3f2ef;
+				margin-bottom: -5px;
+			}
+			svg.bigTriangle.white-to-gray path {
+				fill: #FFF;
+				stroke: #FFF;
+			}
+
+			svg.bigTriangle.none-to-gray {
+				background-color: #f3f2ef;
+				margin-bottom: -5px;
+			}
+			svg.bigTriangle.none-to-gray path {
+				fill: #FFF;
+				stroke: #FFF;
+			}
+			svg.bigTriangle.gray-to-white {
+				background-color: #FFF;
+			}
+
+			svg.bigTriangle.gray-to-white path {
+				fill: #f3f2ef;
+				stroke: #f3f2ef;
+				margin-bottom: -5px;
+			}
+			svg.bigTriangle.gray-to-none {
+
+			}
+
+			svg.bigTriangle.gray-to-none path {
+				fill: #f3f2ef;
+				stroke: #f3f2ef;
+				margin-bottom: -5px;
+			}
+			.footer-3 a:hover {
+				color: #e74c3c;
+			}
+			.profile h4 {
+				font-family: 'BRoya', sans-serif;
+				font-weight: bold;
+				font-size: 24px;
+				margin-bottom: 0;
+				margin-top: 10px;
+			}
+			.profile h5 {
+				font-family: 'BRoya', sans-serif;
+				font-size: 18px;
+				margin-top: 0;
+			}
+			.profile div:first-child {
+				padding: 20%;
+				padding-bottom: 0;
+				padding-top: 10%;
+			}
+			.profile {
+				margin-left: -4%;
+				margin-right: -4%;
+			}
+
+			.profile img {
+				-webkit-transition: all 400ms ease-in-out;
+				-moz-transition: all 400ms ease-in-out;
+				transition: all 400ms ease-in-out;
+				-webkit-filter: grayscale(95%);
+				-moz-filter: grayscale(95%);
+				-ms-filter: grayscale(95%);
+				-o-filter: grayscale(95%);
+				filter: grayscale(95%);
+				/*filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id…ale'><feColorMatrix type='saturate' values='0'/></filter></svg>#grayscale");*/
+				filter: gray;
+			}
+			.profile img:hover {
+				-webkit-filter: none;
+				-moz-filter: none;
+				-ms-filter: none;
+				-o-filter: none;
+				filter: none;
+			}
+			#profiles div.row {
+				margin-left: 14%;
+			}
+			.section--map .bigTriangle__bottom {
+				top: auto;
+				bottom: -1px;
+				display: block;
+			}
+			.section--map .bigTriangle {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: 100;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<!-- Header -->
+		<section class="content-23 v-center bg-midnight-blue custom-bg">
+			<div class="background">
+				&nbsp;
+			</div>
+			<div>
+				<div class="container">
+					<div class="startupheader"></div>
+				</div>
+			</div>
+			<h2 class="date startupdate">اسفند ماه 1392 </h2>
+			<a class="control-btn fui-arrow-down icon-startup" href="#"></a>
+		</section>
+		<!-- content-7  -->
+		<section class="content-7 v-center" id="main">
+			<div style="padding-top: 20px;padding-bottom: 20px;">
+				<div class="container">
+					<img src="img/logo.jpg" width="397" height="193" alt="">
+					<h3 style="margin-bottom:10px;font-family: 'BRoya',sans-serif;">هوگر، درخشش انسجام و همکاری دانش آموزی</h3>
+					<div class="row">
+						<div class="span6 offset3">
+							<p style="direction: rtl;text-align: right;font-family: 'BRoya',sans-serif;">
+
+								مرکز استعداد های درخشان شهید سلطانی 3 کرج هر ساله با کوشش و همت دانش آموزان، همایشی با عنوان دستاوردهای علمی و پژوهشی هوگر برگزار می کند. این  همایش تنها همایش علمی پژوهشی دانش آموزی مستقل در سطح استان البرز می باشد که در سال 1383 پایه گذاری شده و اسفند ماه هر سال در دبیرستان شهید سلطانی 3 برگزار می گردد. امسال برای هشتمین دوره، اعضای کادر برگزار کننده ی این همایش که متشکل از دانش آموزان این مرکز می باشد تلاش خود را بر آن نهاده اند تا با برنامه ریزی ای نظام مند و مدبّرانه به هدف ارتقا و برگزاری هرچه بهتر همایش دست پیدا کنند.
+							</p>
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="span12">
+							<p style="direction: rtl;text-align: center;font-family: 'BRoya',sans-serif;clear: both;font-size: 31px;border-top: 1px solid #edeeee;width: 800px;margin: auto;margin-top: 20px;">
+
+								در شبکه های اجتماعی ما را با هش تگ <span style="color: #e74c3c;"> #هوگر </span> بیابید.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<svg class="bigTriangle white-to-gray content-7" style="background-color: rgb(243, 242, 239);" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+			<path d="M0 0 L50 100 L100 0 Z"></path>
+		</svg>
+		<!-- content-23  -->
+		<!-- <section class="content-23  v-center bg-midnight-blue">
+		<div id="bgVideo" class="background"></div>
+		<div>
+		<div class="container">
+		<!-- <div class="hero-unit">
+		<h1>Find a perfect suit for
+		<br class="hidden-phone">
+		your startup</h1>
+		</div> -->
+		<!-- </div>
+		</div>
+		<a class="control-btn fui-arrow-down icon-startup" href="#"> </a>
+		</section> -->
+
+		<!-- content-8  -->
+		<!-- <section class="content-8 v-center" style="background-color:#f3f2ef;">
+		<div>
+		<div class="container">
+		<img width="380" height="187" alt="" src="img/ticket-red@2x.png"/>
+		<h3>Twenty Five Awesome Samples</h3>
+		<div class="row">
+		<div class="span6 offset3">
+		<p>
+		The most important part of the Startup Framework is the samples.
+		The samples form a set of 25 usable pages or you can add new blocks from UI Kit.
+		</p>
+		<a class="btn btn-large btn-clear" href="#">TRY IT NOW</a>
+		</div>
+		</div>
+		</div>
+		</div>
+		</section> -->
+
+		<section class="content-8 v-center" style="background-color:#f3f2ef;">
+			<div style="padding-top: 0;padding-bottom: 0px;">
+				<div class="container">
+					<div id="profiles">
+						<h3 style="margin-bottom: 0;font-family: 'BRoya',sans-serif;font-weight: bold;font-size: 36px;"> کادر اجرایی همایش</h3>
+						<h4 style="font-family: 'BRoya',sans-serif;font-size: 21px;direction: rtl;">کسانی که ما را در اجرای این همایش همکاری می کنند.</h4>
+						<div class="row">
+							<div class="span4 profile">
+								<div ><img class="img-circle"  src="img/namdar.jpg"/>
+								</div>
+								<h4>آراد نامدار مقدم</h4>
+								<h5>معاون علمی</h5>
+							</div>
+							<div class="span4 profile">
+								<div ><img class="img-circle"  src="img/kozegaran.jpg"/>
+								</div>
+								<h4>عرفان کوزه گران</h4>
+								<h5>مدیریت همایش</h5>
+							</div>
+							<div class="span4 profile">
+								<div ><img class="img-circle"  src="img/karbalaei.jpg"/>
+								</div>
+								<h4>علی کربلایی میرزایی</h4>
+								<h5>معاون اجرایی</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="span4 profile">
+								<div ><img class="img-circle"  src="img/tariverdi.jpg"/>
+								</div>
+								<h4>علیرضا تاری وردی</h4>
+								<h5>ناظر کل</h5>
+							</div>
+							<div class="span4 profile">
+								<div ><img class="img-circle"  src="img/saeidmehr.jpg"/>
+								</div>
+								<h4>امیرحسین سعیدمهر</h4>
+								<h5>معاونت فناوری اطلاعات و پذیرش</h5>
+							</div>
+							<div class="span4 profile">
+								<div ><img class="img-circle"  src="img/ahangaran.jpg"/>
+								</div>
+								<h4>محمد آهنگران</h4>
+								<h5>روابط عمومی</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="span4 profile">
+								<div ><img class="img-circle"  src="img/eghbali.jpg"/>
+								</div>
+								<h4>کسری اقبالی</h4>
+								<h5>سرپرست کادر علمی</h5>
+							</div>
+							<div class="span4 profile">
+								<div ><img class="img-circle"  src="img/ghasemi.jpg"/>
+								</div>
+								<h4>سپهر قاسمی</h4>
+								<h5>سرپرست امور مالی</h5>
+							</div>
+							<div class="span4 profile">
+								<div ><img class="img-circle"  src="img/yoonesii.jpg"/>
+								</div>
+								<h4>کامیاب یونسی</h4>
+								<h5>سرپرست تدارکات</h5>
+							</div>
+						</div>
+						<div class="row" style="margin-left: 10%;">
+							<div class="span2">
+
+							</div>
+							<div class="span4 profile">
+								<div ><img class="img-circle"  src="img/vahed.jpg"/>
+								</div>
+								<h4>طاها واحد</h4>
+								<h5>سرپرست اجرایی</h5>
+							</div>
+							<div class="span4 profile">
+								<div ><img class="img-circle"  src="img/yazdpoor.jpg"/>
+								</div>
+								<h4>عرفان یزدپور</h4>
+								<h5>برنامه نویس همایش</h5>
+							</div>
+							<div class="span2">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<svg class="bigTriangle gray-to-none content-8" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+			<path d="M0 0 L50 100 L100 0 Z"></path>
+		</svg>
+		<iframe style="width:100%;margin-top: -200px;margin-bottom: -128px;" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Shahid+Soltani,+Karaj,+Alborz,+Iran&amp;aq=0&amp;oq=Shahid+Soltani+&amp;sll=37.0625,-95.677068&amp;sspn=43.25835,80.859375&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;t=m&amp;iwloc=A&amp;ll=35.83751,50.99391&amp;spn=0.006295,0.006295&amp;output=embed"></iframe>
+		<br />
+		<small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Shahid+Soltani,+Karaj,+Alborz,+Iran&amp;aq=0&amp;oq=Shahid+Soltani+&amp;sll=37.0625,-95.677068&amp;sspn=43.25835,80.859375&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;t=m&amp;iwloc=A&amp;ll=35.83751,50.99391&amp;spn=0.006295,0.006295" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+		<svg class="bigTriangle bigTriangle__bottom nothing-to-white" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 850 100" preserveAspectRatio="none">
+			<polygon style="fill: #fff;stroke: #fff;"points="0,0 0,100 425,100 850,100 850,0 425,100 "></polygon>
+		</svg>
+		<!-- footer-3 -->
+		<section class="content-8 v-center" >
+			<div style="padding-top: 10px;padding-bottom: 0px;">
+				<div class="container">
+					<div class="row">
+						<div class="span12">
+							<h2 style="margin-bottom: 0;font-family: 'BRoya',sans-serif;font-weight: bold;font-size: 36px;">محل برگزاری</h2>
+							<h4 style="margin-bottom: 0;font-family: 'BRoya',sans-serif;font-weight: normal;font-size: 21px;"> آدرس : کرج، آزادگان، خیابان مطهری، خیابان شهید سلمان ساوجی، بین اردلان 1 و 2، جنب کوی شاهد، مرکز شهید سلطانی 3</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<svg class="bigTriangle white-to-gray" style="background-color: #1B1F23;" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+			<path d="M0 0 L50 100 L100 0 Z"></path>
+		</svg>
+		<footer class="footer-3" style="padding: 20px;padding-bottom: 0;">
+			<div class="container">
+				<h6 style="font-family:'BRoya',sans-serif;direction: rtl;text-align: center;font-size:17px;"> پیاده سازی و توسعه از <a href="http://amir.saeidmehr.ir">امیرحسین سعیدمهر </a>به همراه نگارگری <a href="http://twitter.com/erfan.kg">عرفان کوزه گران</a></br></h6>
+				<h6 style="font-family:'BRoya',sans-serif;direction: rtl;text-align: center;font-size:14px;"> ایده پردازی از آثار <a href="http://sallar.me"> سالار کابلی </a></h6>
+			</div>
+		</footer>
+
+		<!-- Placed at the end of the document so the pages load faster -->
+
+		<script src="flat-ui/js/bootstrap.min.js"></script>
+		<!--[if lt IE 8]>
+		<script src="flat-ui/js/icon-font-ie7.js"></script>
+		<![endif]-->
+		<script src="common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+		<script src="common-files/js/jquery.parallax.min.js"></script>
+		<script src="common-files/js/startup-kit.js"></script>
+		<script src="js/jquery.backgroundvideo.min.js"></script>
+		<script src="js/script.js"></script>
+
+	</body>
+</html>
